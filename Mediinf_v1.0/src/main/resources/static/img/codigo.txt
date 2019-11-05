@@ -1,0 +1,10 @@
+<a th:href="@{'/crud/editar/{id}'(id=${usuario.id})}">
+                               <span class="fa-stack">
+                                 <i class="glyphicon glyphicon-edit"></i>
+                               </span>
+                           </a>
+                           <a th:href="@{'/crud/borrar/{id}'(id=${usuario.id})}">
+                               <span class="fa-stack">
+                                 <i class="glyphicon glyphicon-trash"></i>
+                               </span>
+                           </a>

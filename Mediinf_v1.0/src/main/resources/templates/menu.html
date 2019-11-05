@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Inicio</title>
+    </head>
+    <body>
+        <h1 th:inline="text">Has iniciado sesion con una cuenta tipo: [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesion"/>
+        </form>
+        <h3><a th:href="@{/admin}"> administar cuentas</a> | <a th:href="@{/user}"> user</a></h3>
+    </body>
+</html>
